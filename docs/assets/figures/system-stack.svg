@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">从源码到硬件的系统层次</title>
+  <desc id="desc">源码经过编译器和语言运行时，调用操作系统接口，最终由处理器、内存、网络和存储执行；可观测性贯穿所有层次。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+    <style>
+      .box{fill:#f8fafc;stroke:#475569;stroke-width:2}
+      .accent{fill:#eef2ff;stroke:#4f46e5;stroke-width:2}
+      .side{fill:#f0fdfa;stroke:#0f766e;stroke-width:2}
+      .label{font:600 25px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#111827;text-anchor:middle}
+      .sub{font:18px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#475569;text-anchor:middle}
+      .arrow{stroke:#4b5563;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="520" fill="#fff"/>
+  <rect class="accent" x="120" y="45" width="760" height="70" rx="8"/>
+  <text class="label" x="500" y="77">源码与语言语义</text>
+  <text class="sub" x="500" y="103">对象 · 类型 · 并发 · 错误与资源生命周期</text>
+  <rect class="box" x="120" y="145" width="760" height="70" rx="8"/>
+  <text class="label" x="500" y="177">编译器、链接器与运行时</text>
+  <text class="sub" x="500" y="203">IR · 优化 · ABI · GC · 调度器 · 事件循环</text>
+  <rect class="box" x="120" y="245" width="760" height="70" rx="8"/>
+  <text class="label" x="500" y="277">操作系统</text>
+  <text class="sub" x="500" y="303">进程 · 虚拟内存 · 文件 · Socket · 调度与隔离</text>
+  <rect class="accent" x="120" y="345" width="760" height="100" rx="8"/>
+  <text class="label" x="500" y="382">硬件与设备</text>
+  <text class="sub" x="500" y="412">ISA · CPU/GPU · Cache/DRAM · NIC · SSD</text>
+  <path class="arrow" d="M500 115 V140"/>
+  <path class="arrow" d="M500 215 V240"/>
+  <path class="arrow" d="M500 315 V340"/>
+  <rect class="side" x="930" y="85" width="210" height="320" rx="10"/>
+  <text class="label" x="1035" y="130">证据闭环</text>
+  <text class="sub" x="1035" y="178">规格与协议</text>
+  <text class="sub" x="1035" y="222">实现与源码</text>
+  <text class="sub" x="1035" y="266">指标与日志</text>
+  <text class="sub" x="1035" y="310">剖析与追踪</text>
+  <text class="sub" x="1035" y="354">实验与反例</text>
+  <path class="arrow" d="M925 245 H890"/>
+  <text class="sub" x="500" y="488">解释必须能够跨层向下追踪，也能够用观测证据向上验证</text>
+</svg>

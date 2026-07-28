@@ -1,0 +1,8 @@
+MathJax 3.2.2
+
+Source: https://www.npmjs.com/package/mathjax/v/3.2.2
+License: Apache License 2.0; see LICENSE in this directory.
+
+This directory contains the combined TeX-to-CHTML browser component and its
+CHTML webfont set. The files are kept locally so mathematical notation remains
+available with the site artifact.

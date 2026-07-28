@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+  <title id="title">从源文件到运行中进程的编译、链接与加载流水线</title>
+  <desc id="desc">源文件经过前端形成中间表示，经优化和后端生成目标文件；链接器组合符号与重定位，加载器映射进程映像，运行时完成初始化。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+    <style>
+      .box{fill:#f8fafc;stroke:#475569;stroke-width:2}
+      .accent{fill:#eef2ff;stroke:#4f46e5;stroke-width:2.2}
+      .runtime{fill:#f0fdfa;stroke:#0f766e;stroke-width:2}
+      .label{font:600 21px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#111827;text-anchor:middle}
+      .sub{font:16px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#475569;text-anchor:middle}
+      .arrow{stroke:#4b5563;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="520" fill="#fff"/>
+  <rect class="accent" x="40" y="155" width="160" height="100" rx="8"/>
+  <text class="label" x="120" y="195">源文件</text>
+  <text class="sub" x="120" y="225">tokens / types</text>
+  <rect class="box" x="245" y="155" width="170" height="100" rx="8"/>
+  <text class="label" x="330" y="195">前端</text>
+  <text class="sub" x="330" y="225">AST · 语义检查</text>
+  <rect class="accent" x="460" y="155" width="170" height="100" rx="8"/>
+  <text class="label" x="545" y="195">中间表示</text>
+  <text class="sub" x="545" y="225">SSA · CFG</text>
+  <rect class="box" x="675" y="155" width="170" height="100" rx="8"/>
+  <text class="label" x="760" y="195">优化与后端</text>
+  <text class="sub" x="760" y="225">合法化 · 选指令</text>
+  <rect class="accent" x="890" y="155" width="170" height="100" rx="8"/>
+  <text class="label" x="975" y="195">目标文件</text>
+  <text class="sub" x="975" y="225">段 · 符号 · 重定位</text>
+  <rect class="box" x="1105" y="155" width="170" height="100" rx="8"/>
+  <text class="label" x="1190" y="195">链接器</text>
+  <text class="sub" x="1190" y="225">解析与布局</text>
+  <path class="arrow" d="M200 205 H240"/>
+  <path class="arrow" d="M415 205 H455"/>
+  <path class="arrow" d="M630 205 H670"/>
+  <path class="arrow" d="M845 205 H885"/>
+  <path class="arrow" d="M1060 205 H1100"/>
+  <rect class="runtime" x="455" y="340" width="490" height="95" rx="10"/>
+  <text class="label" x="700" y="378">加载器与语言运行时</text>
+  <text class="sub" x="700" y="407">映射段 · 动态重定位 · TLS · 构造函数 · GC / 调度器初始化</text>
+  <path class="arrow" d="M1190 260 C1190 320 1010 385 950 385"/>
+  <rect class="accent" x="1010" y="350" width="240" height="75" rx="38"/>
+  <text class="label" x="1130" y="382">运行中进程</text>
+  <text class="sub" x="1130" y="407">虚拟地址空间与线程</text>
+  <path class="arrow" d="M950 385 H1005"/>
+  <text class="sub" x="700" y="485">源码语义、ABI、目标格式和操作系统装载契约共同决定最终行为</text>
+</svg>

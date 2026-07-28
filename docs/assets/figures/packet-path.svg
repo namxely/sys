@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">一次网络发送跨越的队列和协议边界</title>
+  <desc id="desc">应用数据依次经过语言运行时、Socket 缓冲区、传输和网络层、队列规则、网卡 DMA、网络链路，再在远端逆向进入应用。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+    <style>
+      .host{fill:#f8fafc;stroke:#64748b;stroke-width:2}
+      .box{fill:#eef2ff;stroke:#4f46e5;stroke-width:2}
+      .wire{fill:#f0fdfa;stroke:#0f766e;stroke-width:2}
+      .label{font:600 21px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#111827;text-anchor:middle}
+      .sub{font:16px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:#475569;text-anchor:middle}
+      .arrow{stroke:#4b5563;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="560" fill="#fff"/>
+  <rect class="host" x="40" y="40" width="500" height="450" rx="12"/>
+  <text class="label" x="290" y="76">发送端主机</text>
+  <rect class="host" x="860" y="40" width="500" height="450" rx="12"/>
+  <text class="label" x="1110" y="76">接收端主机</text>
+  <rect class="box" x="95" y="105" width="175" height="70" rx="8"/>
+  <text class="label" x="182" y="135">应用 / 运行时</text>
+  <text class="sub" x="182" y="160">用户缓冲区</text>
+  <rect class="box" x="310" y="105" width="175" height="70" rx="8"/>
+  <text class="label" x="397" y="135">Socket</text>
+  <text class="sub" x="397" y="160">发送缓冲区</text>
+  <rect class="box" x="310" y="225" width="175" height="70" rx="8"/>
+  <text class="label" x="397" y="255">TCP / QUIC</text>
+  <text class="sub" x="397" y="280">可靠性与拥塞</text>
+  <rect class="box" x="95" y="225" width="175" height="70" rx="8"/>
+  <text class="label" x="182" y="255">IP / 队列规则</text>
+  <text class="sub" x="182" y="280">路由与排队</text>
+  <rect class="box" x="170" y="360" width="240" height="75" rx="8"/>
+  <text class="label" x="290" y="392">NIC / DMA Ring</text>
+  <text class="sub" x="290" y="418">分段、校验与传输队列</text>
+  <rect class="wire" x="580" y="220" width="240" height="100" rx="50"/>
+  <text class="label" x="700" y="260">网络路径</text>
+  <text class="sub" x="700" y="290">交换 · 路由 · 排队 · 丢包</text>
+  <rect class="box" x="915" y="360" width="240" height="75" rx="8"/>
+  <text class="label" x="1035" y="392">NIC / DMA Ring</text>
+  <text class="sub" x="1035" y="418">接收队列与中断合并</text>
+  <rect class="box" x="915" y="225" width="175" height="70" rx="8"/>
+  <text class="label" x="1002" y="255">IP / 队列规则</text>
+  <text class="sub" x="1002" y="280">校验与递交</text>
+  <rect class="box" x="1130" y="225" width="175" height="70" rx="8"/>
+  <text class="label" x="1217" y="255">TCP / QUIC</text>
+  <text class="sub" x="1217" y="280">重组与流量控制</text>
+  <rect class="box" x="1130" y="105" width="175" height="70" rx="8"/>
+  <text class="label" x="1217" y="135">Socket</text>
+  <text class="sub" x="1217" y="160">接收缓冲区</text>
+  <rect class="box" x="915" y="105" width="175" height="70" rx="8"/>
+  <text class="label" x="1002" y="135">应用 / 运行时</text>
+  <text class="sub" x="1002" y="160">消费与背压</text>
+  <path class="arrow" d="M270 140 H305"/>
+  <path class="arrow" d="M397 175 V220"/>
+  <path class="arrow" d="M310 260 H275"/>
+  <path class="arrow" d="M182 295 C182 325 220 345 270 355"/>
+  <path class="arrow" d="M410 398 C500 398 535 320 575 290"/>
+  <path class="arrow" d="M820 290 C860 320 885 380 910 395"/>
+  <path class="arrow" d="M1035 360 C1035 325 1010 310 1005 300"/>
+  <path class="arrow" d="M1090 260 H1125"/>
+  <path class="arrow" d="M1217 225 V180"/>
+  <path class="arrow" d="M1130 140 H1095"/>
+  <text class="sub" x="700" y="525">每个箭头都可能包含复制、排队、批处理、校验、唤醒或速率控制</text>
+</svg>

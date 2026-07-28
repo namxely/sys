@@ -1,0 +1,104 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12.13"
+          cache: pip
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: "1.26.5"
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24.18.0"
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4
+        with:
+          toolchain: "1.97.1"
+      - name: Set up Java
+        uses: actions/setup-java@03ad4de0992f5dab5e18fcb136590ce7c4a0ac95 # v5.6.0
+        with:
+          distribution: temurin
+          java-version: "25.0.3+9"
+      - name: Set up CUDA compiler
+        run: |
+          curl --fail --location --silent --show-error \
+            https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb \
+            --output /tmp/cuda-keyring.deb
+          echo "d2a6b11c096396d868758b86dab1823b25e14d70333f1dfa74da5ddaf6a06dba  /tmp/cuda-keyring.deb" \
+            | sha256sum --check
+          sudo dpkg --install /tmp/cuda-keyring.deb
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            cuda-nvcc-13-3=13.3.33-1 \
+            cuda-cudart-dev-13-3=13.3.29-1
+          echo "/usr/local/cuda-13.3/bin" >> "$GITHUB_PATH"
+      - name: Install dependencies
+        run: |
+          python -m pip install --requirement requirements.txt
+          npm ci
+      - name: Check content
+        run: python scripts/check_content.py
+      - name: Check knowledge architecture
+        run: python scripts/check_architecture.py
+      - name: Check technical figures
+        run: python scripts/check_figures.py
+      - name: Check code snippets
+        run: python scripts/check_code.py
+      - name: Check Markdown and mathematics
+        run: python scripts/check_rendering.py
+      - name: Build site
+        run: mkdocs build --strict
+      - name: Check rendered links and fragments
+        run: python scripts/check_links.py --site-dir site
+      - name: Check generated and browser rendering
+        run: >-
+          python scripts/check_rendering.py --site-dir site --browser
+          --visual-artifacts-dir visual-audit
+      - name: Upload visual audit report
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: visual-audit
+          path: visual-audit
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

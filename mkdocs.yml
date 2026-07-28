@@ -1,0 +1,202 @@
+site_name: Sys
+site_description: 计算机系统知识库：从程序行为到硬件、网络与分布式系统
+site_author: WineChord
+site_url: https://www.wineandchord.com/sys/
+repo_name: WineChord/sys
+repo_url: https://github.com/WineChord/sys
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 WineChord
+
+theme:
+  name: material
+  language: zh
+  icon:
+    logo: material/memory
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  font: false
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - assets/vendor/mathjax/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/WineChord
+      name: WineChord on GitHub
+
+nav:
+  - 首页: index.md
+  - 起点:
+      - 学习路线: guide/roadmap.md
+      - 阅读系统的方法: guide/method.md
+      - 知识架构: guide/architecture.md
+      - 证据与实验: guide/evidence.md
+  - 硬件与操作系统:
+      - 共同基础:
+          - 知识地图: foundations/index.md
+          - 抽象、契约与性能: foundations/abstractions-performance.md
+          - 数据表示与内存层次: foundations/data-memory-hierarchy.md
+      - 计算机体系结构:
+          - 总览: architecture/index.md
+          - ISA 与微架构: architecture/isa-microarchitecture.md
+          - 流水线、ILP 与分支预测: architecture/pipeline-ilp-branch.md
+          - 缓存与一致性: architecture/cache-coherence.md
+          - 虚拟内存与 TLB: architecture/virtual-memory-tlb.md
+          - 原子操作与内存模型: architecture/atomics-memory-model.md
+          - CPU: architecture/cpu.md
+          - GPU 与 SIMT: architecture/gpu-simt.md
+      - 操作系统:
+          - 总览: os/index.md
+          - 进程与线程: os/process-thread.md
+          - 调度: os/scheduling.md
+          - 虚拟内存: os/virtual-memory.md
+          - 文件系统: os/filesystem.md
+          - I/O、中断与 DMA: os/io-interrupt-dma.md
+          - 隔离与容器: os/isolation-containers.md
+  - 并发与运行时:
+      - 并发:
+          - 总览: concurrency/index.md
+          - 顺序、竞态与不变量: concurrency/foundations.md
+          - 锁与条件变量: concurrency/locks-condition-variables.md
+          - 协程: concurrency/coroutines.md
+          - 异步与事件循环: concurrency/async-event-loop.md
+          - 无锁算法与 RCU: concurrency/lock-free-rcu.md
+          - 结构化并发: concurrency/structured-concurrency.md
+      - 语言与运行时:
+          - 总览: languages/index.md
+          - 比较框架: languages/comparison.md
+          - C: languages/c.md
+          - C++: languages/cpp.md
+          - Java 与 JVM: languages/java-jvm.md
+          - Go: languages/go.md
+          - Rust: languages/rust.md
+          - Python: languages/python.md
+          - JavaScript: languages/javascript.md
+          - TypeScript: languages/typescript.md
+          - Node.js: languages/nodejs.md
+          - WebAssembly: languages/webassembly.md
+  - 网络与存储:
+      - 计算机网络:
+          - 总览: network/index.md
+          - 分层与分组: network/layers-packets.md
+          - 以太网、IP 与路由: network/ethernet-ip-routing.md
+          - TCP、UDP 与 QUIC: network/transport-tcp-udp-quic.md
+          - 拥塞控制: network/congestion-control.md
+          - DNS、HTTP 与 TLS: network/dns-http-tls.md
+          - Socket 与 I/O 模型: network/sockets-io.md
+          - 数据中心网络与 RDMA: network/datacenter-rdma.md
+      - 存储:
+          - 总览: storage/index.md
+          - 层次与设备: storage/hierarchy-devices.md
+          - SSD 与 NVMe: storage/ssd-nvme.md
+          - 文件系统机制: storage/filesystems.md
+          - 数据库存储: storage/database-storage.md
+          - 缓存、日志与崩溃一致性: storage/caching-logging-consistency.md
+  - 并行与分布式:
+      - 并行计算:
+          - 总览: parallel/index.md
+          - Work、Span 与扩展定律: parallel/performance-models.md
+          - 共享内存与 OpenMP: parallel/shared-memory-openmp.md
+          - SIMD 与 SIMT: parallel/simd-simt.md
+          - CUDA: parallel/cuda.md
+          - MPI 与集合通信: parallel/mpi-collectives.md
+          - 拓扑与通信: parallel/topology-communication.md
+      - 分布式系统:
+          - 总览: distributed/index.md
+          - 时间、时钟与顺序: distributed/time-order.md
+          - 复制与共识: distributed/replication-consensus.md
+          - 事务与隔离: distributed/transactions-isolation.md
+          - 分片: distributed/sharding.md
+          - 分布式存储: distributed/distributed-storage.md
+          - 可靠性与可观测性: distributed/reliability-observability.md
+  - 工具与性能:
+      - 工具链:
+          - 总览: tooling/index.md
+          - 编译流水线: tooling/compiler-pipeline.md
+          - LLVM 与优化: tooling/llvm-optimization.md
+          - 链接、加载与 ABI: tooling/linking-loading.md
+          - 构建与可复现性: tooling/build-reproducibility.md
+          - 调试: tooling/debugging.md
+      - 性能与可观测性:
+          - 总览: performance/index.md
+          - 基准设计: performance/benchmarking.md
+          - 性能剖析: performance/profiling.md
+          - 指标、日志与追踪: performance/observability.md
+          - 容量与故障定位: performance/capacity-troubleshooting.md
+  - 索引:
+      - 术语表: glossary.md
+      - 一手资料入口: resources.md
+      - 更新日志: changelog.md
