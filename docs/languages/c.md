@@ -211,6 +211,7 @@ int main(void) {
 - `size_t`、`ssize_t` 与内核单次传输上限。
 
 ```c
+#define _POSIX_C_SOURCE 200809L
 #include <errno.h>
 #include <limits.h>
 #include <stddef.h>

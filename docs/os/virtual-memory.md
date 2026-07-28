@@ -85,6 +85,7 @@ Linux 提供显式 HugeTLB 与 Transparent Huge Pages。THP 策略、支持页�
 下面的 POSIX C11 程序创建文件、调整长度、映射、写入并用 `msync` 请求同步：
 
 ```c
+#define _POSIX_C_SOURCE 200809L
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>

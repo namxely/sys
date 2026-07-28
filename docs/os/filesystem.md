@@ -72,16 +72,19 @@ fsync(parent_directory)
 下面是 Linux/POSIX C11 的简化实现。它在当前目录用固定临时名，实际库代码还应避免并发命名冲突并保留目标元数据。
 
 ```c
+#define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
+#include <limits.h>
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 static int write_all(int fd, const void *buf, size_t n) {
     const char *p = buf;
     while (n) {
-        ssize_t k = write(fd, p, n);
-        if (k > 0) { p += k; n -= (size_t)k; continue; }
+        size_t chunk = n > (size_t)SSIZE_MAX ? (size_t)SSIZE_MAX : n;
+        ssize_t k = write(fd, p, chunk);
+        if (k > 0) { p += (size_t)k; n -= (size_t)k; continue; }
         if (k < 0 && errno == EINTR) continue;
         return -1;
     }
