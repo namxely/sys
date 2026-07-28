@@ -164,7 +164,7 @@ $$
 
 提高 `GOGC` 通常用更多内存换更少 GC CPU；降低它则相反。Go 1.19 起的软内存上限还考虑 runtime 管理的非堆内存，并故意允许在避免 GC thrashing 时超出：它不是容器 OOM 的硬保险。应给 runtime 不可见内存、cgo、mmap 与操作系统留余量。
 
-GC 的关键输入是**分配速率与活跃对象图**，不只是堆的名义大小。缓存、长寿命 goroutine 栈、未停止的 ticker、挂起 channel 和保存在 closure 中的对象都可能维持可达性。
+GC 的关键输入包括：**分配速率与活跃对象图**，而不只是堆的名义大小。缓存、长寿命 goroutine 栈、未停止的 ticker、挂起 channel 和保存在 closure 中的对象都可能维持可达性。
 
 ### 逃逸与分配
 

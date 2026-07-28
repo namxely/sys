@@ -54,7 +54,7 @@ C/C++ include 依赖通常由 compiler depfile 产生；generated header 还必�
 app.o: app.cc
 ```
 
-会漏掉头文件。过度依赖（把整个源码树都作为输入）虽正确，却使小改动触发全量重建。目标是**完整且最小**。
+会漏掉头文件。过度依赖（把整个源码树都作为输入）虽正确，却使小改动触发全量重建。目标可以概括为：**完整且最小**。
 
 Ninja 的 `depfile`、`deps`、`restat`、implicit/order-only dependency 解决不同问题；把 order-only 当内容依赖会漏重建，把所有顺序边当内容依赖则损失增量性能。
 
