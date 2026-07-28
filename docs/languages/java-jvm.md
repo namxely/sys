@@ -10,8 +10,8 @@ Java 的关键设计不是“所有代码都解释执行”，而是把源语言
 
 这种选择带来两个长期结果：
 
-1. **部署契约稳定于字节码层。** Java 编译器、Kotlin 等前端都可以生成 JVM class file；运行时通过相同的验证和链接规则接收它。
-2. **执行策略可以演进。** [JVMS 的历史说明](https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-1.html)明确 JVM 不必天然是解释器；实现可以解释、JIT 编译，也可以使用专用硬件。
+1. <strong>部署契约稳定于字节码层。</strong>Java 编译器、Kotlin 等前端都可以生成 JVM class file；运行时通过相同的验证和链接规则接收它。
+2. **执行策略可以演进。**[JVMS 的历史说明](https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-1.html)明确 JVM 不必天然是解释器；实现可以解释、JIT 编译，也可以使用专用硬件。
 
 早期虚拟机常把“跨平台”换成启动和峰值性能代价。HotSpot 路线用 profile-guided compilation、内联和去优化（deoptimization）化解这个矛盾：先快速开始，观察实际调用，再为热路径生成专门代码；若假设失效，则恢复到较通用的执行状态。垃圾收集也从单一停顿式方案演化为吞吐、延迟和堆规模各有侧重的多个 collector。
 
@@ -21,11 +21,11 @@ Java 的关键设计不是“所有代码都解释执行”，而是把源语言
 
 ### JLS 规定源程序
 
-[Java Language Specification](https://docs.oracle.com/javase/specs/jls/se25/html/index.html)定义类型系统、表达式求值、异常、线程与内存模型。源码中 `int` 固定为 32 位二进制补码语义，不会因宿主是 LP64 就变成 64 位；引用不是可做地址算术的 C 指针。
+[Java Language Specification](https://docs.oracle.com/javase/specs/jls/se25/html/index.html) 定义类型系统、表达式求值、异常、线程与内存模型。源码中 `int` 固定为 32 位二进制补码语义，不会因宿主是 LP64 就变成 64 位；引用不是可做地址算术的 C 指针。
 
 ### JVMS 规定虚拟机与 class file
 
-[JVMS Chapter 4](https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-4.html)定义 class file 的二进制格式与约束。Java SE 25 对应的 class file major version 是 69。方法体通常编码为面向 operand stack 的 bytecode；每个调用 frame 包含局部变量区、操作数栈和到当前类运行时常量池的引用。
+[JVMS Chapter 4](https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-4.html) 定义 class file 的二进制格式与约束。Java SE 25 对应的 class file major version 是 69。方法体通常编码为面向 operand stack 的 bytecode；每个调用 frame 包含局部变量区、操作数栈和到当前类运行时常量池的引用。
 
 源代码：
 
@@ -52,7 +52,7 @@ ireturn
 
 ## 类的生命线：load、link、initialize {#class-lifecycle}
 
-[JVMS Chapter 5](https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-5.html)把类或接口的创建过程分成几个阶段：
+[JVMS Chapter 5](https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-5.html) 把类或接口的创建过程分成几个阶段：
 
 ```text
 class bytes
@@ -149,7 +149,7 @@ object
 
 ## 垃圾收集：回收不可达对象，不管理外部资源 {#gc}
 
-GC 从 roots 出发追踪可达对象，释放不可达对象占据的托管堆。Java SE 不指定 collector；[JDK 25 GC Tuning Guide](https://docs.oracle.com/en/java/javase/25/gctuning/index.html)描述 HotSpot 的多种选择及其吞吐、延迟和 footprint 取舍。
+GC 从 roots 出发追踪可达对象，释放不可达对象占据的托管堆。Java SE 不指定 collector；[JDK 25 GC Tuning Guide](https://docs.oracle.com/en/java/javase/25/gctuning/index.html) 描述 HotSpot 的多种选择及其吞吐、延迟和 footprint 取舍。
 
 ### 为什么需要代际、区域与屏障
 
@@ -176,7 +176,7 @@ oldObject.field = youngObject;
 
 ## Java Memory Model：可见性来自 happens-before {#jmm}
 
-[JLS Chapter 17](https://docs.oracle.com/javase/specs/jls/se25/html/jls-17.html)定义线程动作与 happens-before。若两个冲突访问没有 happens-before 且至少一个是写，程序存在 data race；无数据竞争的正确同步程序获得顺序一致性的核心保证。
+[JLS Chapter 17](https://docs.oracle.com/javase/specs/jls/se25/html/jls-17.html) 定义线程动作与 happens-before。若两个冲突访问没有 happens-before 且至少一个是写，程序存在 data race；无数据竞争的正确同步程序获得顺序一致性的核心保证。
 
 重要边包括：
 
@@ -218,7 +218,7 @@ producer 的普通构造写在 program order 中先于 volatile write；consumer
 
 ## JNI：越过托管边界后，契约重新开始 {#jni}
 
-[JNI Specification](https://docs.oracle.com/en/java/javase/25/docs/specs/jni/design.html)让 Java 调用 native library，也允许 native 代码查找类、调用方法和访问数组。它同时引入一条高风险边界：
+[JNI Specification](https://docs.oracle.com/en/java/javase/25/docs/specs/jni/design.html) 让 Java 调用 native library，也允许 native 代码查找类、调用方法和访问数组。它同时引入一条高风险边界：
 
 - `JNIEnv *` 只对当前线程有效，不能缓存后交给另一线程；
 - local reference 通常只在当前 native 调用范围内有效，跨调用保存要创建 global reference；
@@ -249,8 +249,8 @@ java -XX:StartFlightRecording=filename=run.jfr,dumponexit=true Publication
 
 - `javap -c -v` 检查 class version、常量池、descriptor、bytecode 和 stack map；
 - unified logging 观察类加载、GC、safepoint 或编译相关事件；
-- [Java Flight Recorder](https://openjdk.org/jeps/328)把分配、锁、线程、GC 和 CPU 样本放进同一时间线；
-- [JMH](https://openjdk.org/projects/code-tools/jmh/)处理 JVM benchmark 的 warm-up、dead-code elimination、constant folding 和多 fork 等常见陷阱。
+- [Java Flight Recorder](https://openjdk.org/jeps/328) 把分配、锁、线程、GC 和 CPU 样本放进同一时间线；
+- [JMH](https://openjdk.org/projects/code-tools/jmh/) 处理 JVM benchmark 的 warm-up、dead-code elimination、constant folding 和多 fork 等常见陷阱。
 
 微基准至少要报告 JDK 完整版本、collector、heap flags、warm-up、fork 数、输入分布和机器拓扑。峰值吞吐测试不代表冷启动，平均停顿不代表 tail latency，JIT 编译时间也不应悄悄排除在短命服务之外。
 

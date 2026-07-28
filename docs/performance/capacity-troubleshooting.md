@@ -380,12 +380,12 @@ autoscaler 与 circuit breaker 也是 feedback controller。错误设计会振�
 
 ## Reference
 
-- [Little：A Proof for the Queuing Formula $L=\lambda W$](https://doi.org/10.1287/opre.9.3.383)
-- [Kingman：The Single Server Queue in Heavy Traffic](https://doi.org/10.1017/S0305004100036094)
-- [Amdahl：Validity of the Single Processor Approach](https://doi.org/10.1145/1465482.1465560)
-- [Linux kernel：PSI](https://docs.kernel.org/accounting/psi.html)
-- [Linux kernel：Control Group v2](https://docs.kernel.org/admin-guide/cgroup-v2.html)
-- [Linux kernel：CPU frequency and scaling](https://docs.kernel.org/admin-guide/pm/cpufreq.html)
-- [Google SRE Book：Handling Overload](https://sre.google/sre-book/handling-overload/)
-- [Google SRE Book：Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/)
-- [HdrHistogram：Coordinated Omission](https://hdrhistogram.github.io/HdrHistogram/plotFiles.html)
+- [Little: A Proof for the Queuing Formula $L=\lambda W$](https://doi.org/10.1287/opre.9.3.383)
+- [Kingman: The Single Server Queue in Heavy Traffic](https://doi.org/10.1017/S0305004100036094)
+- [Amdahl: Validity of the Single Processor Approach](https://doi.org/10.1145/1465482.1465560)
+- [Linux kernel: PSI](https://docs.kernel.org/accounting/psi.html)
+- [Linux kernel: Control Group v2](https://docs.kernel.org/admin-guide/cgroup-v2.html)
+- [Linux kernel: CPU frequency and scaling](https://docs.kernel.org/admin-guide/pm/cpufreq.html)
+- [Google SRE Book: Handling Overload](https://sre.google/sre-book/handling-overload/)
+- [Google SRE Book: Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/)
+- [HdrHistogram: Coordinated Omission](https://hdrhistogram.github.io/HdrHistogram/plotFiles.html)

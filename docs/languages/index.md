@@ -36,7 +36,7 @@
 ## Reference
 
 - [ISO/IEC 9899:2024 — C](https://www.iso.org/standard/82075.html)
-- [ISO/IEC JTC1/SC22/WG21：C++ working draft](https://eel.is/c++draft/)
+- [ISO/IEC JTC1/SC22/WG21: C++ working draft](https://eel.is/c++draft/)
 - [Java SE 25 Specifications](https://docs.oracle.com/en/java/javase/25/docs/specs/index.html)
 - [The Go Programming Language Specification](https://go.dev/ref/spec)
 - [The Rust Reference](https://doc.rust-lang.org/reference/)

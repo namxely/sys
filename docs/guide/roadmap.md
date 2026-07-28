@@ -76,7 +76,7 @@
 
 `C / C++ / Rust / Go → ABI 与链接 → 内存模型 → 虚拟内存 → I/O → 调试与剖析`
 
-重点页面包括 [C](../languages/c.md)、[C++](../languages/cpp.md)、[Rust](../languages/rust.md)、[Go](../languages/go.md)、[WebAssembly](../languages/webassembly.md)、[链接、加载与 ABI](../tooling/linking-loading.md)和[性能剖析](../performance/profiling.md)。
+重点页面包括 [C](../languages/c.md)、[C++](../languages/cpp.md)、[Rust](../languages/rust.md)、[Go](../languages/go.md)、[WebAssembly](../languages/webassembly.md)、[链接、加载与 ABI](../tooling/linking-loading.md) 和[性能剖析](../performance/profiling.md)。
 
 ### 后端与基础设施工程
 

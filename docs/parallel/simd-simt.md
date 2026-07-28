@@ -79,7 +79,7 @@ CPU 观察 vector instruction mix、cycles、cache misses 和编译器 vectoriza
 
 - [Work、Span 与扩展定律](performance-models.md)给出算术强度、带宽上界与并行效率的统一模型。
 - [CUDA 编程模型](cuda.md)把 warp、shared memory 与 coalescing 落到完整 kernel。
-- [共享内存与 OpenMP](shared-memory-openmp.md)连接 CPU 线程、cache coherence、NUMA 与向量化。
+- [共享内存与 OpenMP](shared-memory-openmp.md) 连接 CPU 线程、cache coherence、NUMA 与向量化。
 
 ## Reference
 

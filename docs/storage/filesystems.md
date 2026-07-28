@@ -78,7 +78,7 @@ fsync(parent directory)
 
 ## 与上下层对齐
 
-- [存储层次与块 I/O](hierarchy-devices.md)给出 page cache、writeback 和设备队列的下层路径。
+- [存储层次与块 I/O](hierarchy-devices.md) 给出 page cache、writeback 和设备队列的下层路径。
 - [缓存、日志与崩溃一致性](caching-logging-consistency.md)比较 WAL、CoW、双写与恢复协议。
 - [数据库存储引擎](database-storage.md)说明数据库页、WAL 与文件系统持久语义如何叠加。
 

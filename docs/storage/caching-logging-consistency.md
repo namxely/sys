@@ -91,7 +91,7 @@ for each persistence boundary:
 
 - [文件系统](filesystems.md)具体说明 journal、CoW、rename 与目录持久化。
 - [数据库存储引擎](database-storage.md)把 WAL、page LSN、checkpoint 和 MVCC 放进同一引擎。
-- [存储层次与块 I/O](hierarchy-devices.md)沿 page cache、blk-mq 与设备 cache 追踪 ACK。
+- [存储层次与块 I/O](hierarchy-devices.md) 沿 page cache、blk-mq 与设备 cache 追踪 ACK。
 - [分布式存储](../distributed/distributed-storage.md)进一步区分本地 durable、quorum durable 与跨故障域恢复。
 
 ## Reference

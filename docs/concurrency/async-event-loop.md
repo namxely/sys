@@ -202,7 +202,7 @@ PENDING --cancel----> CANCELLING --ack--> CANCELLED
 
 ## 跨层连接
 
-- 内核 readiness/completion、IRQ 与队列见[I/O、中断与 DMA](../os/io-interrupt-dma.md)；
+- 内核 readiness/completion、IRQ 与队列见 [I/O、中断与 DMA](../os/io-interrupt-dma.md)；
 - coroutine frame 与 resume 见[协程](coroutines.md)；
 - 有界队列与取消语义见[并发基础](foundations.md)；
 - 父子 deadline 与错误传播见[结构化并发](structured-concurrency.md)。

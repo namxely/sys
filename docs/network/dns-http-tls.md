@@ -68,7 +68,7 @@ $$
 
 ## 请求链的相邻层
 
-- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md)展开 HTTP/1.1、HTTP/2 与 HTTP/3 所依赖的传输差异。
+- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md) 展开 HTTP/1.1、HTTP/2 与 HTTP/3 所依赖的传输差异。
 - [Socket 与 I/O 模型](sockets-io.md)说明握手与响应在非阻塞程序中怎样表现为 readiness、completion 和 deadline。
 - [可靠性与可观测性](../distributed/reliability-observability.md)把 trace context、重试预算和 SLO 接到同一请求链。
 

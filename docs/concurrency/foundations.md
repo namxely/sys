@@ -127,10 +127,10 @@ $$
 
 Coffman 四条件：
 
-1. mutual exclusion；
-2. hold and wait；
-3. no preemption；
-4. circular wait。
+1. mutual exclusion.
+2. hold and wait.
+3. no preemption.
+4. circular wait.
 
 打破任一条件可防死锁。工程上最常见的是全局锁顺序：
 

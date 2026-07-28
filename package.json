@@ -2,6 +2,7 @@
   "name": "winechord-sys-validation",
   "private": true,
   "devDependencies": {
+    "autocorrect-node": "2.14.0",
     "typescript": "7.0.2"
   }
 }

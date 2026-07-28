@@ -23,6 +23,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 npm ci
+python scripts/check_copywriting.py
 python scripts/check_content.py
 python scripts/check_architecture.py
 python scripts/check_figures.py

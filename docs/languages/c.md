@@ -65,7 +65,7 @@ int main(void) {
 - 通过不兼容类型的左值访问对象；
 - 把任意整数转换成指针后假定一定可解引用。
 
-“one-past” 指针可以用于比较和循环终止，却不能解引用。两个数值相同的指针也可能来自不同生命周期；内存分配器复用地址不会让旧指针重新有效。现代编译器的 provenance 讨论，正是在澄清这种“地址数值”与“合法访问路径”的差异。
+“one-past”指针可以用于比较和循环终止，却不能解引用。两个数值相同的指针也可能来自不同生命周期；内存分配器复用地址不会让旧指针重新有效。现代编译器的 provenance 讨论，正是在澄清这种“地址数值”与“合法访问路径”的差异。
 
 ## 别名、有效类型与优化 {#aliasing}
 
@@ -196,7 +196,7 @@ int main(void) {
 - `seq_cst`：在上述性质外参加单一全序，推理最直接；
 - fence：只有与具体原子操作组成规定关系时才有意义。
 
-无锁并不天然更快。争用缓存行、compare-exchange 重试、ABA、回收悬垂节点和跨 NUMA 流量，都可能让锁成为更稳定的选择。进一步可结合[原子操作与内存模型](../architecture/atomics-memory-model.md)和[无锁结构与 RCU](../concurrency/lock-free-rcu.md)理解。
+无锁并不天然更快。争用缓存行、compare-exchange 重试、ABA、回收悬垂节点和跨 NUMA 流量，都可能让锁成为更稳定的选择。进一步可结合[原子操作与内存模型](../architecture/atomics-memory-model.md)和[无锁结构与 RCU](../concurrency/lock-free-rcu.md) 理解。
 
 ## 从库调用到系统调用 {#syscall-boundary}
 

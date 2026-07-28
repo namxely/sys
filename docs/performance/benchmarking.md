@@ -246,8 +246,8 @@ SPEC CPU 的 run/reporting rules 把结果定义为观察，并要求披露影�
 
 - [Google Benchmark User Guide](https://github.com/google/benchmark/blob/main/docs/user_guide.md)
 - [SPEC CPU 2017 Run and Reporting Rules](https://www.spec.org/cpu2017/Docs/runrules.html)
-- [HdrHistogram：Coordinated omission correction](https://hdrhistogram.github.io/HdrHistogram/JavaDoc/)
-- [Little：A Proof for the Queuing Formula $L=\lambda W$](https://doi.org/10.1287/opre.9.3.383)
-- [Kalibera and Jones：Rigorous Benchmarking in Reasonable Time](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-892.pdf)
-- [Georges, Buytaert and Eeckhout：Statistically Rigorous Java Performance Evaluation](https://doi.org/10.1145/1297027.1297033)
+- [HdrHistogram: Coordinated omission correction](https://hdrhistogram.github.io/HdrHistogram/JavaDoc/)
+- [Little: A Proof for the Queuing Formula $L=\lambda W$](https://doi.org/10.1287/opre.9.3.383)
+- [Kalibera and Jones: Rigorous Benchmarking in Reasonable Time](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-892.pdf)
+- [Georges, Buytaert and Eeckhout: Statistically Rigorous Java Performance Evaluation](https://doi.org/10.1145/1297027.1297033)
 - [Linux `perf-stat(1)`](https://man7.org/linux/man-pages/man1/perf-stat.1.html)

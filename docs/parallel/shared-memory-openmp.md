@@ -84,7 +84,7 @@ NUMA 上 first touch 决定物理页初始位置。主线程串行初始化、�
 ## 相邻问题
 
 - [Work、Span 与扩展定律](performance-models.md)帮助判断任务粒度、关键路径与理论加速上限。
-- [SIMD 与 SIMT](simd-simt.md)把线程级并行进一步连接到单核向量执行。
+- [SIMD 与 SIMT](simd-simt.md) 把线程级并行进一步连接到单核向量执行。
 - [拓扑与通信优化](topology-communication.md)解释 affinity、first touch 与 NUMA placement 的系统代价。
 
 ## Reference

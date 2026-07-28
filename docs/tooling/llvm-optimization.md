@@ -8,7 +8,7 @@ LLVM IR 位于源语言与目标机器之间：它低到可以表达地址、整
 
 LLVM code representation 可存在为：
 
-- in-memory IR；
+- in-memory IR.
 - bitcode；
 - human-readable `.ll` assembly。
 
@@ -251,5 +251,5 @@ IR verifier 检查结构不变量，不证明语义等价。Alive2 可对一部�
 - [LLVM 21.1.0 Optimization Remarks](https://releases.llvm.org/21.1.0/docs/Remarks.html)
 - [Clang 21.1.0 ThinLTO](https://releases.llvm.org/21.1.0/tools/clang/docs/ThinLTO.html)
 - [LLVM 21.1.0 PGO](https://releases.llvm.org/21.1.0/docs/HowToBuildWithPGO.html)
-- [Alive2：Bounded translation validation for LLVM](https://github.com/AliveToolkit/alive2)
+- [Alive2: Bounded translation validation for LLVM](https://github.com/AliveToolkit/alive2)
 - [Finding and Understanding Bugs in C Compilers](https://www.cs.utah.edu/~regehr/papers/pldi11-preprint.pdf)

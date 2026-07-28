@@ -70,7 +70,7 @@ scrub 读取并校验静态数据，发现 silent corruption；只有 checksum +
 - [分片与再平衡](sharding.md)展开 range、consistent hashing、epoch 与在线迁移。
 - [复制与共识](replication-consensus.md)解释 leader、quorum 与复制日志的安全边界。
 - [缓存、日志与崩溃一致性](../storage/caching-logging-consistency.md)区分本地 WAL durable 与跨副本 durable。
-- [数据中心网络与 RDMA](../network/datacenter-rdma.md)说明修复、复制与前台 I/O 共享的实际 fabric。
+- [数据中心网络与 RDMA](../network/datacenter-rdma.md) 说明修复、复制与前台 I/O 共享的实际 fabric。
 
 ## Reference
 

@@ -97,8 +97,8 @@ cat /proc/<pid>/limits
 
 ## 从接口回到协议
 
-- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md)定义字节流、数据报与多流传输真正提供的边界。
-- [DNS、HTTP 与 TLS](dns-http-tls.md)展示这些 I/O 状态怎样进入一次完整请求的握手、复用与超时预算。
+- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md) 定义字节流、数据报与多流传输真正提供的边界。
+- [DNS、HTTP 与 TLS](dns-http-tls.md) 展示这些 I/O 状态怎样进入一次完整请求的握手、复用与超时预算。
 - [拥塞控制](congestion-control.md)解释 socket 可写并不等于路径没有排队或拥塞。
 - [可靠性与可观测性](../distributed/reliability-observability.md)把取消、重试和指标放回端到端故障模型。
 

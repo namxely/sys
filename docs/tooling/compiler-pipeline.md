@@ -8,7 +8,7 @@
   <a class="sys-figure__media" href="../../assets/figures/compiler-pipeline.svg">
     <img src="../../assets/figures/compiler-pipeline.svg" alt="源文件经过前端、IR、优化与后端生成目标文件，再由链接器、加载器和语言运行时形成运行中进程" width="1400" height="520" loading="lazy">
   </a>
-  <figcaption>每一阶段都把上层语义改写为更具体的契约；目标文件并不是终点，链接、加载、运行时初始化与操作系统映射共同决定最终行为。示意图依据 <a href="https://llvm.org/docs/">LLVM 文档</a>与 <a href="https://gitlab.com/x86-psABIs/x86-64-ABI">System V x86-64 psABI</a>重新绘制。</figcaption>
+  <figcaption>每一阶段都把上层语义改写为更具体的契约；目标文件并不是终点，链接、加载、运行时初始化与操作系统映射共同决定最终行为。示意图依据 <a href="https://llvm.org/docs/">LLVM 文档</a>与 <a href="https://gitlab.com/x86-psABIs/x86-64-ABI">System V x86-64 psABI</a> 重新绘制。</figcaption>
 </figure>
 
 ```text
@@ -214,7 +214,7 @@ clang -O2 -fsave-optimization-record demo.c -c
 
 ## Reference
 
-- [Clang 21.1.0：Introduction to the Clang AST](https://releases.llvm.org/21.1.0/tools/clang/docs/IntroductionToTheClangAST.html)
+- [Clang 21.1.0: Introduction to the Clang AST](https://releases.llvm.org/21.1.0/tools/clang/docs/IntroductionToTheClangAST.html)
 - [LLVM 21.1.0 Language Reference](https://releases.llvm.org/21.1.0/docs/LangRef.html)
 - [LLVM 21.1.0 Code Generator](https://releases.llvm.org/21.1.0/docs/CodeGenerator.html)
 - [LLVM 21.1.0 New Pass Manager](https://releases.llvm.org/21.1.0/docs/NewPassManager.html)
@@ -222,4 +222,4 @@ clang -O2 -fsave-optimization-record demo.c -c
 - [LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation](https://llvm.org/pubs/2004-01-30-CGO-LLVM.html)
 - [LLVM Documentation](https://llvm.org/docs/)
 - [System V x86-64 psABI](https://gitlab.com/x86-psABIs/x86-64-ABI)
-- [CompCert：A formally verified optimizing compiler](https://compcert.org/doc/)
+- [CompCert: A formally verified optimizing compiler](https://compcert.org/doc/)

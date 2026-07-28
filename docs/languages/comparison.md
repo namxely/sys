@@ -127,10 +127,10 @@ $$
 
 ## Reference
 
-- [ISO C++ working draft：object model and abstract machine](https://eel.is/c++draft/intro)
+- [ISO C++ working draft: object model and abstract machine](https://eel.is/c++draft/intro)
 - [The Go Programming Language Specification](https://go.dev/ref/spec)
 - [The Rust Reference](https://doc.rust-lang.org/reference/)
-- [Python Language Reference：Data model](https://docs.python.org/3/reference/datamodel.html)
+- [Python Language Reference: Data model](https://docs.python.org/3/reference/datamodel.html)
 - [ECMAScript Language Specification](https://tc39.es/ecma262/)
-- [TypeScript：Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility)
-- [Node.js：Event loop and worker pool](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
+- [TypeScript: Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility)
+- [Node.js: Event loop and worker pool](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)

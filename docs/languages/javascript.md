@@ -178,10 +178,10 @@ source -> parse -> bytecode/baseline
 ## Reference
 
 - [ECMAScript 2026 Language Specification](https://tc39.es/ecma262/2026/)
-- [ECMAScript：Execution Contexts](https://tc39.es/ecma262/2026/multipage/executable-code-and-execution-contexts.html#sec-execution-contexts)
-- [ECMAScript：Jobs](https://tc39.es/ecma262/2026/multipage/executable-code-and-execution-contexts.html#sec-jobs)
-- [ECMAScript：Memory Model](https://tc39.es/ecma262/2026/multipage/memory-model.html)
-- [WHATWG HTML：Event loops](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
-- [WHATWG HTML：Microtask queuing](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing)
-- [WHATWG DOM：AbortController](https://dom.spec.whatwg.org/#interface-abortcontroller)
-- [ECMAScript：Promise objects](https://tc39.es/ecma262/2026/multipage/control-abstraction-objects.html#sec-promise-objects)
+- [ECMAScript: Execution Contexts](https://tc39.es/ecma262/2026/multipage/executable-code-and-execution-contexts.html#sec-execution-contexts)
+- [ECMAScript: Jobs](https://tc39.es/ecma262/2026/multipage/executable-code-and-execution-contexts.html#sec-jobs)
+- [ECMAScript: Memory Model](https://tc39.es/ecma262/2026/multipage/memory-model.html)
+- [WHATWG HTML: Event loops](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
+- [WHATWG HTML: Microtask queuing](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing)
+- [WHATWG DOM: AbortController](https://dom.spec.whatwg.org/#interface-abortcontroller)
+- [ECMAScript: Promise objects](https://tc39.es/ecma262/2026/multipage/control-abstraction-objects.html#sec-promise-objects)

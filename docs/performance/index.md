@@ -40,7 +40,7 @@ symptom / SLO impact
 ## Reference
 
 - [Linux `perf_event_open(2)`](https://man7.org/linux/man-pages/man2/perf_event_open.2.html)
-- [Linux kernel：eBPF verifier](https://docs.kernel.org/bpf/verifier.html)
+- [Linux kernel: eBPF verifier](https://docs.kernel.org/bpf/verifier.html)
 - [OpenTelemetry Specifications](https://opentelemetry.io/docs/specs/)
 - [Google Benchmark User Guide](https://github.com/google/benchmark/blob/main/docs/user_guide.md)
-- [Little：A Proof for the Queuing Formula $L=\lambda W$](https://doi.org/10.1287/opre.9.3.383)
+- [Little: A Proof for the Queuing Formula $L=\lambda W$](https://doi.org/10.1287/opre.9.3.383)

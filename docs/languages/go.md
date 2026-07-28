@@ -219,11 +219,11 @@ go test -bench=. -benchmem ./...
 
 ## Reference
 
-- [The Go Programming Language Specification（Go 1.26）](https://go.dev/ref/spec)
+- [The Go Programming Language Specification (Go 1.26)](https://go.dev/ref/spec)
 - [The Go Memory Model](https://go.dev/ref/mem)
-- [Go runtime HACKING：G, M and P](https://go.dev/src/runtime/HACKING)
-- [Go runtime `proc.go`：scheduler implementation](https://go.dev/src/runtime/proc.go)
-- [Go runtime `chan.go`：channel implementation](https://go.dev/src/runtime/chan.go)
+- [Go runtime HACKING: G, M and P](https://go.dev/src/runtime/HACKING)
+- [Go runtime `proc.go`: scheduler implementation](https://go.dev/src/runtime/proc.go)
+- [Go runtime `chan.go`: channel implementation](https://go.dev/src/runtime/chan.go)
 - [A Guide to the Go Garbage Collector](https://go.dev/doc/gc-guide)
 - [`context` package documentation](https://pkg.go.dev/context)
 - [`runtime/metrics` package documentation](https://pkg.go.dev/runtime/metrics)

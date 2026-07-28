@@ -92,7 +92,7 @@ RPO 是可接受数据丢失窗口，RTO 是恢复时间目标。复制减少故
 
 - [复制与共识](replication-consensus.md)提供 leader、quorum、日志恢复与成员变更的状态来源。
 - [时间、因果与全序](time-order.md)解释 deadline、clock health 与跨节点事件排序。
-- [TCP、UDP 与 QUIC](../network/transport-tcp-udp-quic.md)说明 timeout 为什么不能证明请求未执行。
+- [TCP、UDP 与 QUIC](../network/transport-tcp-udp-quic.md) 说明 timeout 为什么不能证明请求未执行。
 - [拓扑与通信优化](../parallel/topology-communication.md)帮助定位 collective straggler、链路热点与跨层退化。
 
 ## Reference

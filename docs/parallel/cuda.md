@@ -88,7 +88,7 @@ memory-bound kernel 应先看 coalescing、bytes 与复用；compute-bound 再�
 
 ## 把 kernel 放回系统
 
-- [SIMD 与 SIMT](simd-simt.md)解释 lane、warp、分歧与合并访问的执行基础。
+- [SIMD 与 SIMT](simd-simt.md) 解释 lane、warp、分歧与合并访问的执行基础。
 - [Work、Span 与扩展定律](performance-models.md)提供 Roofline、并行度与负载均衡的上界。
 - [拓扑与通信优化](topology-communication.md)把多 GPU、PCIe、NVLink、NUMA 与 NIC 放置接到 kernel 之外。
 

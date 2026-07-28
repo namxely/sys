@@ -71,8 +71,8 @@ tcpdump -eni eth0 'arp or icmp6'
 ## 从一跳走向端到端
 
 - [分层、分组与端到端路径](layers-packets.md)给出封装、MTU 与逐跳观察点的全景。
-- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md)说明路径变化最终如何影响端到端传输状态。
-- [数据中心网络与 RDMA](datacenter-rdma.md)把 ECMP、Clos 与受控 fabric 中的队列问题进一步展开。
+- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md) 说明路径变化最终如何影响端到端传输状态。
+- [数据中心网络与 RDMA](datacenter-rdma.md) 把 ECMP、Clos 与受控 fabric 中的队列问题进一步展开。
 
 ## Reference
 

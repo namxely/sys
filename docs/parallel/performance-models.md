@@ -96,8 +96,8 @@ $$
 
 ## 从模型走向实现
 
-- [共享内存与 OpenMP](shared-memory-openmp.md)展示 work/span 如何落到 task、barrier 与调度粒度。
-- [SIMD 与 SIMT](simd-simt.md)把峰值计算与数据布局细化到 lane 和 memory transaction。
+- [共享内存与 OpenMP](shared-memory-openmp.md) 展示 work/span 如何落到 task、barrier 与调度粒度。
+- [SIMD 与 SIMT](simd-simt.md) 把峰值计算与数据布局细化到 lane 和 memory transaction。
 - [CUDA 编程模型](cuda.md)用 kernel、tile、stream 和 occupancy 验证 Roofline 判断。
 - [MPI 与集合通信](mpi-collectives.md)把 $\alpha$-$\beta$ 通信成本加入跨节点扩展曲线。
 

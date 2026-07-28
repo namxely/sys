@@ -87,7 +87,7 @@ thread B: atomic load -> acquire fence -> ordinary reads
 
 load 必须读取对应 store 或其修改序列中的值，才能建立所需关系。多数应用代码优先把 acquire/release 直接放在原子操作上，更易审计。
 
-## litmus test：store buffering
+## litmus test: store buffering
 
 初始 `x=y=0`：
 

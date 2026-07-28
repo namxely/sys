@@ -91,8 +91,8 @@ ibdev2netdev
 
 - [MPI 与集合通信](mpi-collectives.md)把 rank map 转化为 point-to-point 与 collective 流量。
 - [CUDA 编程模型](cuda.md)说明 stream、kernel 与多 GPU 依赖如何产生通信。
-- [共享内存与 OpenMP](shared-memory-openmp.md)连接 CPU affinity、first touch 和 NUMA locality。
-- [数据中心网络与 RDMA](../network/datacenter-rdma.md)继续追踪 HCA、ECMP、PFC 与跨机架 fabric。
+- [共享内存与 OpenMP](shared-memory-openmp.md) 连接 CPU affinity、first touch 和 NUMA locality。
+- [数据中心网络与 RDMA](../network/datacenter-rdma.md) 继续追踪 HCA、ECMP、PFC 与跨机架 fabric。
 
 ## Reference
 

@@ -382,4 +382,4 @@ $$
 - [OpenTelemetry Profiles specification and Alpha status](https://opentelemetry.io/docs/specs/otel/profiles/)
 - [W3C Trace Context Recommendation](https://www.w3.org/TR/trace-context/)
 - [W3C Baggage Recommendation](https://www.w3.org/TR/baggage/)
-- [Google SRE Workbook：Implementing SLOs](https://sre.google/workbook/implementing-slos/)
+- [Google SRE Workbook: Implementing SLOs](https://sre.google/workbook/implementing-slos/)

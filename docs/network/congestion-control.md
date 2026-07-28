@@ -81,9 +81,9 @@ nstat -az | grep -E 'Retrans|ECN|Timeout'
 
 ## 把反馈放回路径
 
-- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md)说明不同传输如何承载可靠性与拥塞反馈。
+- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md) 说明不同传输如何承载可靠性与拥塞反馈。
 - [分层、分组与端到端路径](layers-packets.md)提供 BDP、队列与 PMTU 的基础坐标。
-- [数据中心网络与 RDMA](datacenter-rdma.md)展示 DCTCP、incast 与 PFC 在受控 fabric 中的取舍。
+- [数据中心网络与 RDMA](datacenter-rdma.md) 展示 DCTCP、incast 与 PFC 在受控 fabric 中的取舍。
 - [Socket 与 I/O 模型](sockets-io.md)连接 `cwnd`、可写事件和应用背压，避免把任一层单独优化。
 
 ## Reference

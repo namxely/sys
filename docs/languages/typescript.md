@@ -227,12 +227,12 @@ TypeScript 同时处理：
 
 ## Reference
 
-- [TypeScript：Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility)
-- [TypeScript：Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
-- [TypeScript：Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
-- [TypeScript：Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
-- [TypeScript：Modules Reference](https://www.typescriptlang.org/docs/handbook/modules/reference.html)
-- [TypeScript：Compiler Options](https://www.typescriptlang.org/tsconfig/)
+- [TypeScript: Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility)
+- [TypeScript: Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
+- [TypeScript: Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
+- [TypeScript: Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
+- [TypeScript: Modules Reference](https://www.typescriptlang.org/docs/handbook/modules/reference.html)
+- [TypeScript: Compiler Options](https://www.typescriptlang.org/tsconfig/)
 - [Announcing TypeScript 7.0](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/)
 - [TypeScript 6.0 Release Notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-6-0.html)
 - [TypeScript 7 native compiler source](https://github.com/microsoft/typescript-go)

@@ -81,7 +81,7 @@ $$
 - [分层、分组与端到端路径](layers-packets.md)解释传输数据最终受 MTU、BDP 与队列怎样约束。
 - [拥塞控制](congestion-control.md)深入 `cwnd`、丢包恢复、ECN 与 pacing。
 - [Socket 与 I/O 模型](sockets-io.md)把 short read/write、半关闭与异步完成落到接口。
-- [DNS、HTTP 与 TLS](dns-http-tls.md)展示传输选择如何进入一次 HTTPS 请求。
+- [DNS、HTTP 与 TLS](dns-http-tls.md) 展示传输选择如何进入一次 HTTPS 请求。
 
 ## Reference
 

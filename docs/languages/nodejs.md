@@ -180,12 +180,12 @@ Node 提供 `perf_hooks`、diagnostics channel、inspector、process reports 与
 
 ## Reference
 
-- [Node.js 26.5.0：Event loop and worker pool](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
-- [Node.js 26.5.0：Streams](https://nodejs.org/api/stream.html)
-- [Node.js 26.5.0：Worker threads](https://nodejs.org/api/worker_threads.html)
-- [Node.js 26.5.0：Asynchronous context tracking](https://nodejs.org/api/async_context.html)
-- [Node.js 26.5.0：Performance measurement APIs](https://nodejs.org/api/perf_hooks.html)
-- [libuv 1.x：Design overview](https://docs.libuv.org/en/v1.x/design.html)
-- [libuv 1.x：Thread pool work scheduling](https://docs.libuv.org/en/v1.x/threadpool.html)
-- [libuv 1.x：Event loop API](https://docs.libuv.org/en/v1.x/loop.html)
-- [Node.js source：event loop integration](https://github.com/nodejs/node/tree/v26.5.0)
+- [Node.js 26.5.0: Event loop and worker pool](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
+- [Node.js 26.5.0: Streams](https://nodejs.org/api/stream.html)
+- [Node.js 26.5.0: Worker threads](https://nodejs.org/api/worker_threads.html)
+- [Node.js 26.5.0: Asynchronous context tracking](https://nodejs.org/api/async_context.html)
+- [Node.js 26.5.0: Performance measurement APIs](https://nodejs.org/api/perf_hooks.html)
+- [libuv 1.x: Design overview](https://docs.libuv.org/en/v1.x/design.html)
+- [libuv 1.x: Thread pool work scheduling](https://docs.libuv.org/en/v1.x/threadpool.html)
+- [libuv 1.x: Event loop API](https://docs.libuv.org/en/v1.x/loop.html)
+- [Node.js source: event loop integration](https://github.com/nodejs/node/tree/v26.5.0)

@@ -125,7 +125,7 @@ cc main.o -Wl,--start-group -la -lb -Wl,--end-group
 5. 建立初始 TLS，执行必要 initializer；
 6. 把控制转给 runtime entry，最终调用 `main`。
 
-Linux/glibc 的精确 library search order受 `DT_RPATH`、`LD_LIBRARY_PATH`、`DT_RUNPATH`、cache、默认目录和 secure-execution mode 影响。`RPATH` 与 `RUNPATH` 的传递语义不同；setuid/capability 等安全执行会忽略或清除一部分环境变量。
+Linux/glibc 的精确 library search order 受 `DT_RPATH`、`LD_LIBRARY_PATH`、`DT_RUNPATH`、cache、默认目录和 secure-execution mode 影响。`RPATH` 与 `RUNPATH` 的传递语义不同；setuid/capability 等安全执行会忽略或清除一部分环境变量。
 
 ```bash
 readelf -dW program
@@ -248,13 +248,13 @@ patchelf --print-interpreter program
 ## Reference
 
 - [ELF Object File Format 4.3 draft](https://gabi.xinuos.com/elf/)
-- [ELF：Program loading and dynamic linking](https://gabi.xinuos.com/elf/07-loading-intro.html)
-- [ELF：Relocation](https://gabi.xinuos.com/elf/06-reloc.html)
-- [ELF：Dynamic linking](https://gabi.xinuos.com/elf/08-dynamic.html)
+- [ELF: Program loading and dynamic linking](https://gabi.xinuos.com/elf/07-loading-intro.html)
+- [ELF: Relocation](https://gabi.xinuos.com/elf/06-reloc.html)
+- [ELF: Dynamic linking](https://gabi.xinuos.com/elf/08-dynamic.html)
 - [System V ABI, Edition 4.1](https://refspecs.linuxfoundation.org/elf/gabi41.pdf)
 - [System V AMD64 psABI](https://gitlab.com/x86-psABIs/x86-64-ABI)
 - [GNU Binutils 2.46 `ld` manual](https://sourceware.org/binutils/docs/ld/)
-- [GNU `ld`：Linker scripts](https://sourceware.org/binutils/docs/ld/Scripts.html)
+- [GNU `ld`: Linker scripts](https://sourceware.org/binutils/docs/ld/Scripts.html)
 - [Linux `ld.so(8)`](https://man7.org/linux/man-pages/man8/ld.so.8.html)
 - [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
-- [Itanium C++ ABI：Exception handling](https://itanium-cxx-abi.github.io/cxx-abi/abi-eh.html)
+- [Itanium C++ ABI: Exception handling](https://itanium-cxx-abi.github.io/cxx-abi/abi-eh.html)

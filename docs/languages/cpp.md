@@ -219,12 +219,12 @@ as-if rule 允许编译器执行任何不改变规定可观察行为的变换。
 
 ## Reference
 
-- [C++ working draft：Object model](https://eel.is/c++draft/intro.object)
-- [C++ working draft：Object lifetime](https://eel.is/c++draft/basic.life)
-- [C++ working draft：Destructors](https://eel.is/c++draft/class.dtor)
-- [C++ working draft：Multi-threaded executions and data races](https://eel.is/c++draft/intro.races)
-- [C++ working draft：Order and consistency](https://eel.is/c++draft/atomics.order)
-- [Itanium C++ ABI：Data layout, vtables and linkage](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
-- [Itanium C++ ABI：Exception handling](https://itanium-cxx-abi.github.io/cxx-abi/abi-eh.html)
+- [C++ working draft: Object model](https://eel.is/c++draft/intro.object)
+- [C++ working draft: Object lifetime](https://eel.is/c++draft/basic.life)
+- [C++ working draft: Destructors](https://eel.is/c++draft/class.dtor)
+- [C++ working draft: Multi-threaded executions and data races](https://eel.is/c++draft/intro.races)
+- [C++ working draft: Order and consistency](https://eel.is/c++draft/atomics.order)
+- [Itanium C++ ABI: Data layout, vtables and linkage](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
+- [Itanium C++ ABI: Exception handling](https://itanium-cxx-abi.github.io/cxx-abi/abi-eh.html)
 - [Clang AddressSanitizer documentation](https://clang.llvm.org/docs/AddressSanitizer.html)
 - [Clang ThreadSanitizer documentation](https://clang.llvm.org/docs/ThreadSanitizer.html)

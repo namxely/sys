@@ -277,9 +277,9 @@ GC 移动物件需要 runtime 维护 handle/heap inspection；仅看裸地址可
 
 - [DWARF Version 5 Standard](https://dwarfstd.org/dwarf5std.html)
 - [GDB 17.2 Manual](https://sourceware.org/gdb/download/onlinedocs/)
-- [GDB：Debugging optimized code](https://sourceware.org/gdb/current/onlinedocs/gdb/Optimized-Code.html)
-- [GDB：Process record and replay](https://sourceware.org/gdb/current/onlinedocs/gdb/Process-Record-and-Replay.html)
-- [LLVM 21.1.0：Source Level Debugging](https://releases.llvm.org/21.1.0/docs/SourceLevelDebugging.html)
+- [GDB: Debugging optimized code](https://sourceware.org/gdb/current/onlinedocs/gdb/Optimized-Code.html)
+- [GDB: Process record and replay](https://sourceware.org/gdb/current/onlinedocs/gdb/Process-Record-and-Replay.html)
+- [LLVM 21.1.0: Source Level Debugging](https://releases.llvm.org/21.1.0/docs/SourceLevelDebugging.html)
 - [LLDB Documentation](https://lldb.llvm.org/)
 - [Clang 21.1.0 AddressSanitizer](https://releases.llvm.org/21.1.0/tools/clang/docs/AddressSanitizer.html)
 - [Clang 21.1.0 ThreadSanitizer](https://releases.llvm.org/21.1.0/tools/clang/docs/ThreadSanitizer.html)

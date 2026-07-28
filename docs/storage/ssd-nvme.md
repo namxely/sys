@@ -78,7 +78,7 @@ ZNS 把地址空间划为 zone，要求按写指针顺序写入并显式 reset�
 
 ## 放回完整存储栈
 
-- [存储层次与块 I/O](hierarchy-devices.md)解释 NVMe queue 如何接到文件系统、page cache 与 blk-mq。
+- [存储层次与块 I/O](hierarchy-devices.md) 解释 NVMe queue 如何接到文件系统、page cache 与 blk-mq。
 - [缓存、日志与崩溃一致性](caching-logging-consistency.md)追踪 Flush、FUA 和 commit ACK 的持久边界。
 - [数据库存储引擎](database-storage.md)展示 compaction、WAL 与设备 WAF 怎样叠加。
 

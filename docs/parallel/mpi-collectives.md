@@ -74,7 +74,7 @@ communicator 隔离消息上下文，重复使用 tag 不会跨 communicator 匹
 
 - [拓扑与通信优化](topology-communication.md)解释 rank、NUMA、GPU 与 NIC 的映射成本。
 - [Work、Span 与扩展定律](performance-models.md)提供扩展效率与通信开销的基线。
-- [数据中心网络与 RDMA](../network/datacenter-rdma.md)展开 collective 下方的 Clos、ECMP、RDMA 与拥塞。
+- [数据中心网络与 RDMA](../network/datacenter-rdma.md) 展开 collective 下方的 Clos、ECMP、RDMA 与拥塞。
 - [复制与共识](../distributed/replication-consensus.md)对比“所有 rank 参与一次 collective”和“故障下多数节点决定一个值”的不同语义。
 
 ## Reference

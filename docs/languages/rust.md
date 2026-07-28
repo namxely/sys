@@ -200,13 +200,13 @@ binary size and cold-start
 
 ## Reference
 
-- [The Rust Reference：Destructors](https://doc.rust-lang.org/reference/destructors.html)
-- [The Rust Reference：Unsafety](https://doc.rust-lang.org/reference/unsafety.html)
-- [The Rust Reference：Undefined behavior](https://doc.rust-lang.org/reference/behavior-considered-undefined.html)
-- [Rust standard library：`Future`](https://doc.rust-lang.org/std/future/trait.Future.html)
-- [Rust standard library：`Pin`](https://doc.rust-lang.org/std/pin/)
-- [Rustonomicon：Aliasing](https://doc.rust-lang.org/nomicon/aliasing.html)
-- [Rustonomicon：Send and Sync](https://doc.rust-lang.org/nomicon/send-and-sync.html)
+- [The Rust Reference: Destructors](https://doc.rust-lang.org/reference/destructors.html)
+- [The Rust Reference: Unsafety](https://doc.rust-lang.org/reference/unsafety.html)
+- [The Rust Reference: Undefined behavior](https://doc.rust-lang.org/reference/behavior-considered-undefined.html)
+- [Rust standard library: `Future`](https://doc.rust-lang.org/std/future/trait.Future.html)
+- [Rust standard library: `Pin`](https://doc.rust-lang.org/std/pin/)
+- [Rustonomicon: Aliasing](https://doc.rust-lang.org/nomicon/aliasing.html)
+- [Rustonomicon: Send and Sync](https://doc.rust-lang.org/nomicon/send-and-sync.html)
 - [The Async Book](https://rust-lang.github.io/async-book/)
-- [Rust Reference：Type layout](https://doc.rust-lang.org/reference/type-layout.html)
-- [Rust Reference：External blocks](https://doc.rust-lang.org/reference/items/external-blocks.html)
+- [Rust Reference: Type layout](https://doc.rust-lang.org/reference/type-layout.html)
+- [Rust Reference: External blocks](https://doc.rust-lang.org/reference/items/external-blocks.html)

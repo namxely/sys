@@ -62,7 +62,7 @@ JS API 中 `WebAssembly.Module` 与 `WebAssembly.Instance` 就体现了这条边
 
 ## Validation：在执行前维持类型不变量 {#validation}
 
-[Core validation rules](https://webassembly.github.io/spec/core/valid/index.html)为 module 的索引、类型和指令建立静态约束。验证函数体时，可以把控制流想成一个 type stack machine：
+[Core validation rules](https://webassembly.github.io/spec/core/valid/index.html) 为 module 的索引、类型和指令建立静态约束。验证函数体时，可以把控制流想成一个 type stack machine：
 
 $$
 \Gamma \vdash \text{instr} : [t_1^*] \rightarrow [t_2^*]
@@ -175,7 +175,7 @@ console.log({ total, trapped });
 
 ## Imports、exports 与最小能力 {#host-interface}
 
-[Core introduction](https://webassembly.github.io/spec/core/intro/introduction.html)指出 module 只能通过 imports 与环境交互。一个没有文件相关 import 的实例不能凭 core 指令自行打开宿主文件。能力边界因此可由 embedder 构造：
+[Core introduction](https://webassembly.github.io/spec/core/intro/introduction.html) 指出 module 只能通过 imports 与环境交互。一个没有文件相关 import 的实例不能凭 core 指令自行打开宿主文件。能力边界因此可由 embedder 构造：
 
 ```text
 guest import request
@@ -267,7 +267,7 @@ Wasm 的静态验证与 linear-memory bounds 为隔离提供了坚实起点，�
 | host function 漏洞 | 不能 | 审计 offset/length、重入与 ownership |
 | Spectre 类微架构侧信道 | core 边界不足以覆盖 | engine/browser mitigation 与进程隔离 |
 
-[Wasmtime security guidance](https://docs.wasmtime.dev/security.html)把 safe embedder API 与 unsafe 配置、资源限制、可信编译产物等边界分开说明。高风险多租户环境还应组合 OS process、seccomp/sandbox、cgroup、时间与内存配额，而不是让 Wasm instance 独自承担全部隔离。
+[Wasmtime security guidance](https://docs.wasmtime.dev/security.html) 把 safe embedder API 与 unsafe 配置、资源限制、可信编译产物等边界分开说明。高风险多租户环境还应组合 OS process、seccomp/sandbox、cgroup、时间与内存配额，而不是让 Wasm instance 独自承担全部隔离。
 
 退出语义也值得设计。trap、WASI exit、host exception 与 engine interruption 不是同一种失败；池化 instance 前要确认 memory、global、resource handle 和宿主侧状态是否已重置。
 

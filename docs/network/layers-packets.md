@@ -91,7 +91,7 @@ $$
 ## 沿路径继续
 
 - [以太网、IP 与路由](ethernet-ip-routing.md)展开当前一跳的帧交付与跨网段转发。
-- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md)说明端点怎样在 IP 之上建立字节流、数据报或多流语义。
+- [TCP、UDP 与 QUIC](transport-tcp-udp-quic.md) 说明端点怎样在 IP 之上建立字节流、数据报或多流语义。
 - [拥塞控制](congestion-control.md)把 BDP、队列和反馈闭环连接起来。
 
 ## Reference

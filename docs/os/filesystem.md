@@ -164,7 +164,7 @@ cat /proc/pressure/io
 ## 跨层连接
 
 - file-backed 页和回收见[虚拟内存](virtual-memory.md)；
-- 设备队列与完成见[I/O、中断与 DMA](io-interrupt-dma.md)；
+- 设备队列与完成见 [I/O、中断与 DMA](io-interrupt-dma.md)；
 - fd 与 open file description 的归属见[进程与线程](process-thread.md)；
 - 多任务异步文件操作进入[异步 I/O 与事件循环](../concurrency/async-event-loop.md)。
 

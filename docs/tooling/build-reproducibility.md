@@ -229,14 +229,14 @@ PCH/unity build 可减少重复 parsing，却可能扩大失效域、掩盖缺�
 
 ## Reference
 
-- [CMake：Buildsystem Manual](https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html)
-- [CMake：Presets Manual](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html)
+- [CMake: Buildsystem Manual](https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html)
+- [CMake: Presets Manual](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html)
 - [Ninja Build Manual](https://ninja-build.org/manual.html)
-- [Reproducible Builds：Definitions](https://reproducible-builds.org/docs/definition/)
-- [Reproducible Builds：SOURCE_DATE_EPOCH](https://reproducible-builds.org/docs/source-date-epoch/)
-- [Reproducible Builds：Build path](https://reproducible-builds.org/docs/build-path/)
-- [Reproducible Builds：Timestamps](https://reproducible-builds.org/docs/timestamps/)
-- [Reproducible Builds：Stable inputs](https://reproducible-builds.org/docs/stable-inputs/)
+- [Reproducible Builds: Definitions](https://reproducible-builds.org/docs/definition/)
+- [Reproducible Builds: SOURCE_DATE_EPOCH](https://reproducible-builds.org/docs/source-date-epoch/)
+- [Reproducible Builds: Build path](https://reproducible-builds.org/docs/build-path/)
+- [Reproducible Builds: Timestamps](https://reproducible-builds.org/docs/timestamps/)
+- [Reproducible Builds: Stable inputs](https://reproducible-builds.org/docs/stable-inputs/)
 - [SLSA Specification 1.2](https://slsa.dev/spec/v1.2/)
-- [SLSA 1.2：Build requirements](https://slsa.dev/spec/v1.2/build-requirements)
-- [SLSA：Build provenance](https://slsa.dev/spec/v1.2/build-provenance)
+- [SLSA 1.2: Build requirements](https://slsa.dev/spec/v1.2/build-requirements)
+- [SLSA: Build provenance](https://slsa.dev/spec/v1.2/build-provenance)

@@ -72,7 +72,7 @@ cat /proc/meminfo
 
 ## 顺着 I/O 路径继续
 
-- [SSD 与 NVMe](ssd-nvme.md)展开控制器队列、FTL、Flash 并行与持久化命令。
+- [SSD 与 NVMe](ssd-nvme.md) 展开控制器队列、FTL、Flash 并行与持久化命令。
 - [文件系统](filesystems.md)说明块设备之上如何组织名字、extent、日志与恢复。
 - [缓存、日志与崩溃一致性](caching-logging-consistency.md)把 page cache、设备 cache 与 WAL 的持久边界串起来。
 

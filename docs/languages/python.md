@@ -193,12 +193,12 @@ async def serve(reader, writer) -> None:
 
 ## Reference
 
-- [Python 3.14 Language Reference：Data model](https://docs.python.org/3.14/reference/datamodel.html)
-- [Python 3.14 `dis`：CPython bytecode](https://docs.python.org/3.14/library/dis.html)
+- [Python 3.14 Language Reference: Data model](https://docs.python.org/3.14/reference/datamodel.html)
+- [Python 3.14 `dis`: CPython bytecode](https://docs.python.org/3.14/library/dis.html)
 - [CPython source repository](https://github.com/python/cpython/tree/3.14)
-- [CPython C API：Thread states and the GIL](https://docs.python.org/3.14/c-api/threads.html)
-- [Python 3.14：Free-threading HOWTO](https://docs.python.org/3.14/howto/free-threading-python.html)
-- [PEP 703：Making the Global Interpreter Lock Optional](https://peps.python.org/pep-0703/)
+- [CPython C API: Thread states and the GIL](https://docs.python.org/3.14/c-api/threads.html)
+- [Python 3.14: Free-threading HOWTO](https://docs.python.org/3.14/howto/free-threading-python.html)
+- [PEP 703: Making the Global Interpreter Lock Optional](https://peps.python.org/pep-0703/)
 - [`asyncio` task documentation](https://docs.python.org/3.14/library/asyncio-task.html)
 - [`asyncio` event loop documentation](https://docs.python.org/3.14/library/asyncio-eventloop.html)
 - [`tracemalloc` documentation](https://docs.python.org/3.14/library/tracemalloc.html)
