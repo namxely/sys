@@ -20,13 +20,6 @@ caller -> coroutine -> suspend -> caller/scheduler
 
 暂停时必须保存“下一步从哪里开始”和跨暂停点仍存活的局部状态。实现可保存整个栈，也可把需要的状态提升到显式 frame。
 
-<figure class="sys-figure" id="coroutine-state">
-  <a class="sys-figure__media" href="../../assets/figures/coroutine-state.svg">
-    <img src="../../assets/figures/coroutine-state.svg" alt="协程从创建、就绪、运行到等待事件、完成或取消的状态转换，以及调度、唤醒和取消路径" width="1200" height="560" loading="lazy">
-  </a>
-  <figcaption>挂起只保存继续执行所需状态；调度、事件唤醒、取消传播与资源回收是彼此独立但相互约束的协议。示意图依据 <a href="https://eel.is/c++draft/dcl.fct.def.coroutine">C++ coroutine 规范</a>与 <a href="https://kotlinlang.org/docs/coroutines-basics.html">Kotlin coroutine 官方文档</a>重新绘制。</figcaption>
-</figure>
-
 ## stackful 与 stackless
 
 ### stackful

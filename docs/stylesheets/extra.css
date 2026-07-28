@@ -1,6 +1,7 @@
 :root {
   --md-text-font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --md-code-font: "SFMono-Regular", "Cascadia Code", "Liberation Mono", monospace;
+  --wc-inline-math-baseline-shift: -0.22em;
 }
 
 .md-typeset {
@@ -30,47 +31,31 @@
   overflow-wrap: normal;
 }
 
-.md-typeset .arithmatex {
+.md-typeset span.arithmatex {
+  display: inline-block;
+  max-width: none;
+  overflow: visible;
+  vertical-align: var(--wc-inline-math-baseline-shift);
+}
+
+.md-typeset div.arithmatex {
+  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
 }
 
-.sys-figure {
-  margin: 2rem auto 2.2rem;
-  max-width: 50rem;
-}
-
-.sys-figure img {
+.md-typeset .md-typeset__table {
+  box-sizing: border-box;
   display: block;
   width: 100%;
-  height: auto;
-  background: #fff;
-  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 18%, transparent);
-  border-radius: 0.25rem;
-}
-
-.sys-figure figcaption {
-  margin-top: 0.65rem;
-  color: var(--md-default-fg-color--light);
-  font-size: 0.72rem;
-  line-height: 1.6;
-}
-
-.sys-figure a:focus-visible img {
-  outline: 3px solid var(--md-accent-fg-color);
-  outline-offset: 3px;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 44.984375em) {
   .md-typeset {
     line-height: 1.72;
-  }
-
-  .sys-figure {
-    margin: 1.5rem 0 1.75rem;
-  }
-
-  .sys-figure figcaption {
-    font-size: 0.68rem;
   }
 }

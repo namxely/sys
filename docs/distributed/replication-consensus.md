@@ -28,13 +28,6 @@ $$
 
 客户端重试需要 `(client_id, sequence)` 去重，并把结果随状态持久化。否则日志只执行一次仍不能阻止客户端把同一业务命令提交两次。
 
-<figure class="sys-figure" id="replication-timeline">
-  <a class="sys-figure__media" href="../../assets/figures/replication-timeline.svg">
-    <img src="../../assets/figures/replication-timeline.svg" alt="客户端请求进入领导者日志，复制到两个跟随者并在多数派确认后提交，随后再返回与继续复制" width="1300" height="650" loading="lazy">
-  </a>
-  <figcaption>“已经写入领导者日志”“已经被多数副本持久化”“已经提交”“已经应用并被客户端观察”是四个不同边界。示意图依据 <a href="https://raft.github.io/raft.pdf">Raft 论文</a>及其 <a href="https://pdos.csail.mit.edu/6.824/papers/raft-extended.pdf">扩展版本</a>重新绘制。</figcaption>
-</figure>
-
 <a id="paxos"></a>
 ## Paxos 的安全核心
 

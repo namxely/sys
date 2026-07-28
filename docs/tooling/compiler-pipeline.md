@@ -4,13 +4,6 @@
 
 ## 总览 {#overview}
 
-<figure class="sys-figure" id="compiler-pipeline">
-  <a class="sys-figure__media" href="../../assets/figures/compiler-pipeline.svg">
-    <img src="../../assets/figures/compiler-pipeline.svg" alt="源文件经过前端、IR、优化与后端生成目标文件，再由链接器、加载器和语言运行时形成运行中进程" width="1400" height="520" loading="lazy">
-  </a>
-  <figcaption>每一阶段都把上层语义改写为更具体的契约；目标文件并不是终点，链接、加载、运行时初始化与操作系统映射共同决定最终行为。示意图依据 <a href="https://llvm.org/docs/">LLVM 文档</a>与 <a href="https://gitlab.com/x86-psABIs/x86-64-ABI">System V x86-64 psABI</a> 重新绘制。</figcaption>
-</figure>
-
 ```text
 source
   -> lex / parse

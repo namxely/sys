@@ -15,13 +15,6 @@
 | IP | packet | 是逐跳转发单位 |
 | Ethernet | frame | 只在当前链路有效 |
 
-<figure class="sys-figure" id="packet-path">
-  <a class="sys-figure__media" href="../../assets/figures/packet-path.svg">
-    <img src="../../assets/figures/packet-path.svg" alt="数据从发送端应用与 Socket 经 TCP 或 QUIC、IP、网卡和网络路径到达接收端后反向解封装" width="1400" height="560" loading="lazy">
-  </a>
-  <figcaption>端到端路径并不是一条无状态管道：每个箭头都可能对应复制、排队、分段、校验、唤醒或速率控制。示意图依据 <a href="https://www.rfc-editor.org/rfc/rfc9293.html">TCP 规范</a>与 <a href="https://docs.kernel.org/networking/index.html">Linux 网络文档</a>重新绘制。</figcaption>
-</figure>
-
 <a id="delay-model"></a>
 ## 时延与带宽时延积
 

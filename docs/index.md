@@ -2,13 +2,6 @@
 
 从程序行为出发，沿编译、运行时、操作系统、网络与硬件追到真实机制。
 
-<figure class="sys-figure" id="system-stack">
-  <a class="sys-figure__media" href="assets/figures/system-stack.svg">
-    <img src="assets/figures/system-stack.svg" alt="源码、编译器与运行时、操作系统、硬件和观测证据构成的系统层次" width="1200" height="520" loading="lazy">
-  </a>
-  <figcaption>一段程序的行为由多层契约共同决定；规格、实现和观测证据必须沿同一条路径对齐。示意图依据 <a href="https://csapp.cs.cmu.edu/">CS:APP 的全系统视角</a>与 <a href="https://docs.kernel.org/">Linux 内核文档</a>重新绘制。</figcaption>
-</figure>
-
 ## 地图
 
 | 入口 | 核心问题 | 继续阅读 |

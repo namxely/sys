@@ -67,7 +67,7 @@ jobs:
         run: python scripts/check_content.py
       - name: Check knowledge architecture
         run: python scripts/check_architecture.py
-      - name: Check technical figures
+      - name: Check media policy
         run: python scripts/check_figures.py
       - name: Check code snippets
         run: python scripts/check_code.py

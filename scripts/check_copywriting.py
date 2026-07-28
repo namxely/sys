@@ -18,7 +18,6 @@ FILES = [
     ROOT / "README.md",
     ROOT / "mkdocs.yml",
     *sorted((ROOT / "docs").rglob("*.md")),
-    *sorted((ROOT / "docs" / "assets" / "figures").glob("*.svg")),
 ]
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 DISPLAY_MATH = re.compile(r"^\s*\$\$\s*$")

@@ -68,13 +68,6 @@ std::uint32_t load_le32(std::span<const std::byte, 4> in) {
 
 ## 内存层次为何有效
 
-<figure class="sys-figure" id="memory-hierarchy">
-  <a class="sys-figure__media" href="../../assets/figures/memory-hierarchy.svg">
-    <img src="../../assets/figures/memory-hierarchy.svg" alt="从寄存器、处理器缓存、DRAM 到 SSD 的容量、持久性、延迟和管理粒度层次" width="1200" height="600" loading="lazy">
-  </a>
-  <figcaption>越靠近执行单元的层次通常越小、越快、管理粒度越细；局部性决定上层请求能否被更快层吸收。示意图依据 <a href="https://csapp.cs.cmu.edu/">CS:APP 的存储器层次</a>与 <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html">Intel 体系结构手册</a>重新绘制。</figcaption>
-</figure>
-
 程序常具有：
 
 - **时间局部性**：刚访问的数据近期可能再次访问；
