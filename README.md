@@ -1,3 +1,8 @@
+> **Fork Attribution & Extensions** — Official MIT-licensed fork of [`WineChord/sys`](https://github.com/WineChord/sys) (original `LICENSE` & `docs/` preserved).
+> Added by `@namxely`: [**English Guide**](README.en.md) · [**Hướng dẫn Tiếng Việt**](README.vi.md) · [**Runnable Cache & RESP2 Systems Labs (`labs/`)**](labs/README.md) [![Labs CI](https://github.com/namxely/sys/actions/workflows/labs-ci.yml/badge.svg)](https://github.com/namxely/sys/actions/workflows/labs-ci.yml)
+
+---
+
 # Sys
 
 一份从程序行为贯穿到硬件与分布式系统的计算机系统知识库。

@@ -1,0 +1,31 @@
+name: Labs CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "labs/**"
+      - ".github/workflows/labs-ci.yml"
+  pull_request:
+    paths:
+      - "labs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-labs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run Python unit tests
+        run: python -m unittest discover -s labs -v
+      - name: Smoke-run CLI demos
+        run: |
+          python labs/cache_policies.py
+          python labs/resp_protocol.py
